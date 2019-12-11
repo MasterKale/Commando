@@ -90,7 +90,7 @@ declare module 'discord.js-commando' {
 
 		public hasPermission(message: CommandoMessage, ownerOverride?: boolean): boolean | string;
 		public isEnabledIn(guild: GuildResolvable, bypassGroup?: boolean): boolean;
-		public isUsable(message: Message): boolean;
+		public isUsable(message: CommandoMessage): boolean;
 		public onBlock(message: CommandoMessage, reason: string, data?: Object): Promise<Message | Message[]>;
 		public onBlock(message: CommandoMessage, reason: 'guildOnly' | 'nsfw'): Promise<Message | Message[]>;
 		public onBlock(message: CommandoMessage, reason: 'permission', data: { response?: string }): Promise<Message | Message[]>;
