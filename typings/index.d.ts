@@ -63,6 +63,7 @@ declare module 'discord.js-commando' {
 		private static validateInfo(client: CommandoClient, info: CommandInfo);
 
 		public aliases: string[];
+		public argsCollector: ArgumentCollector | null;
 		public argsCount: number;
 		public argsSingleQuotes: boolean;
 		public argsType: string;
